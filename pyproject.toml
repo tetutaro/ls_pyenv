@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ls_pyenv"
+version = "0.1.0"
+description = "list up the names of Python virtualenvs which are written in .python-version files"
+authors = ["Tetsutaro Maruyama <tetsutaro.maruyama@gmail.com>"]
+license = "MIT License"
+
+[tool.poetry.scripts]
+ls-pyenv = "ls_pyenv.ls_pyenv:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
